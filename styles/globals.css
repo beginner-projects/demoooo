@@ -1,0 +1,354 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.addressBarLink {
+  font-size: 25px;
+  padding: 2 0;
+  color: #7d8186;
+  
+}
+
+.slash {
+  color: #7e7f81;
+  font-size: 20px;
+}
+
+.ant-input {
+  background-color: #1f2639 !important;
+  color: white !important;
+  border-width: 0px !important;
+  height: 96px !important;
+  margin-bottom: 5px;
+  font-size: 35px;
+  border-radius: 12px !important;
+}
+
+.ant-input::placeholder {
+  color: #5f6783 !important;
+  font-size: 35px;
+}
+
+.staking-header {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 10px;
+  margin-right: 430px;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .ant-input::placeholder {
+    font-size: 30px; 
+  }
+
+  .ant-input {
+    font-size: 22px;
+  }
+
+  .addressBarLink {
+    font-size: 15px;
+  }
+
+  .slash {
+    font-size: 15px;
+  }
+
+  .staking-header {
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-right: 83px;
+  }
+  
+}
+
+
+.ant-popover-arrow {
+  visibility: hidden;
+}
+
+.ant-popover-title {
+  color: white !important;
+}
+
+.ant-popover-inner-content {
+  color: white !important;
+}
+
+.ant-popover-inner {
+  min-width: 260px !important;
+  min-height: 140px !important;
+  border: 1px solid #21273a;
+  background-color: #0e111b !important;
+}
+
+.ant-radio-group {
+  margin-top: 10px;
+}
+
+.ant-radio-button-wrapper {
+  background-color: #1f2639 !important;
+  color: white !important;
+  font-weight: 500;
+  border-color: white !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  border-color: white !important;
+  background-color: #363e54 !important;
+}
+
+.ant-radio-button-wrapper-checked::before {
+  background-color: white !important;
+}
+
+.ant-modal-content {
+  background-color: #0e111b !important;
+  color: white !important;
+  padding: 0px !important;
+}
+
+.ant-modal {
+  border: 1px solid #363e54;
+  width: 400px !important;
+  border-radius: 10px;
+}
+
+
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.tradeBox {
+  width: 100vw;
+  background-color: #0e111b;
+  border: 2px solid #21273a;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  
+  .tradeBox {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.switchButton {
+  background-color: #3a4157;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 86px;
+  left: 45%;
+  color: #5f6783;
+  border: 3px solid #0e111b;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.switchButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.assetOne {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 36px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetTwo {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .assetOne,
+  .assetTwo {
+    font-size: 14px; /* Adjusted font size for mobile devices */
+  }
+}
+
+.assetOne:hover {
+  cursor: pointer;
+}
+
+.assetTwo:hover {
+  cursor: pointer;
+}
+
+.assetLogo {
+  height: 22px;
+  margin-left: 5px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #243056;
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #5981f3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton[disabled] {
+  background-color: #243056;
+  opacity: 0.4;
+  color: #5982f39b;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #243056;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874;
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #51596f;
+}
+
+.paragraphs {
+  font-size: 19px;
+}
+
+.socials {
+  display: flex;
+  margin-left: 27px;
+}
+
+.social-platform {
+  border-radius: 200px;
+  width: 35px;
+}
+
+.governance {
+  display: flex;
+  justify-content: center;
+}
+
+.contract-address {
+  color: rgb(71, 206, 71);
+  font-style: bold;
+  font-size: 30px;
+}
+
+.store {
+  display: flex;
+}
+
+.store-title {
+  margin-right: 520px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .store-title {
+    margin-right: 120px;
+    font-size: 17px;
+  }
+
+  .paragraphs {
+    font-size: 17px;
+  }
+
+  .socials {
+    margin-left: 18px;
+  }
+
+  .social-platform {
+    width: 33px;
+  }
+
+  .governance {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contract-address {
+    font-size: 14px;
+  }
+
+}
+
